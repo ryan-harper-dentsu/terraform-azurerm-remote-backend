@@ -6,7 +6,7 @@ terraform {
 }
 
 locals {
-  name = lower(replace(var.name, "/[[:^alnum:]]/", ""))
+  name = lower(replace(var.name, "/[[:^punct:]]/", ""))
 }
 
 data "azurerm_client_config" "current" {}
