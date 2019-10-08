@@ -1,5 +1,6 @@
 variable "name" {
   description = "Name of backend storage account."
+  default = "tfbackend"
 }
 
 variable "resource_group_name" {
